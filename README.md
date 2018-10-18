@@ -1,6 +1,6 @@
 ## Probe Demo
 
-Health check with a /healthz endpoint. If probe failed on the endpoint, kube will kill the container and restart again
+Health check with a /healthz endpoint. If probe failed on the endpoint, [kube will kill the container and restart again](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/)
 
 ##
 
@@ -27,6 +27,7 @@ prob-external   LoadBalancer   10.100.200.50   10.193.148.199,100.64.224.47   80
     ```
 
     Set health as false.... will kill one of the containers
+    
     ```
     curl -X PUT --data "{\"health\": false}" http://10.193.148.199/healthz
     ```
