@@ -1,6 +1,6 @@
 ## Probe Demo
 
-Health check with a /healthz endpoint. If probe failed on the endpoint, [kube will kill the container and restart again](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/)
+Health check with a /healthz endpoint. If probe failed on the endpoint, [kube kills the container and recreate the unhealthy container](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/)
 
 ##
 
